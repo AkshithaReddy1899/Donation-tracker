@@ -60,6 +60,9 @@ const Nav = () => {
               <li className="text-gray-800 font-semibold bg-slate-300 md:font-bold md:bg-slate-400 p-2 hover:text-gray-600">
                 <Link to="/all-creators" onClick={() => { setNavbar(false); }}>List</Link>
               </li>
+              <li className="text-gray-800 font-semibold bg-slate-300 md:font-bold md:bg-slate-400 p-2 hover:text-gray-600">
+                <Link to="/my-donations" onClick={() => { setNavbar(false); }}>My Donations</Link>
+              </li>
             </ul>
           </div>
         </div>
