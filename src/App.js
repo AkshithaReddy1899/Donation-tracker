@@ -1,7 +1,18 @@
+import { Routes, Route } from 'react-router-dom';
+import Nav from './components/Nav';
+import Home from './components/Home';
+import List from './components/List';
+import Donations from './components/Donations';
+
 function App() {
   return (
-    <div className="App text-center text-4xl">
-      App
+    <div className="bg-slate-900 text-slate-100 w-screen h-screen overflow-x-hidden">
+      <Nav />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/all-creators" element={<List />} />
+        <Route path="/my-donations" element={<Donations />} />
+      </Routes>
     </div>
   );
 }
