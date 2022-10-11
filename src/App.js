@@ -9,8 +9,8 @@ function App() {
     <div className="bg-slate-900 text-slate-100 w-screen h-screen overflow-x-hidden">
       <Nav />
       <Routes>
-        <Route path="/all-creators" element={<Home />} />
-        <Route path="/" element={<List />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/all-creators" element={<List />} />
         <Route path="/my-donations" element={<Donations />} />
       </Routes>
     </div>
